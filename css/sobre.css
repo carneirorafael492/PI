@@ -1,0 +1,544 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Josefin+Sans&family=Oswald&display=swap');
+
+
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #000;
+    
+  
+}
+
+
+header
+{
+    background-color: #000;
+    border-bottom: solid #FFC700 4px;
+}
+
+
+#menu-principal
+{
+    display: none;
+}
+
+#botao-hamburguer
+{
+    
+    color: #fff;
+    width: 100px;
+    height: 200px;
+    display: block;
+    background-color: transparent;
+    font-size: 24px;
+}
+
+button
+{
+padding: 10px;
+color: #FFC700;
+}
+
+
+
+h1
+{
+
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 20px 20px;
+    color: #FFC700;
+    font-size:40px;
+    letter-spacing: 10px;
+    text-shadow: 0px 0px 80px #FFC700;
+    position: relative;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+a
+{
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+    padding: 10px 10px;
+
+    
+
+}
+
+a:hover
+{
+    color: #FFC700;
+    border-bottom: 5px solid #FFC700;
+    animation: 1.5s infinite anima; 
+}
+
+
+.dividir
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+
+   
+}
+
+
+@keyframes anima {
+
+    0%{transform: scale(1.5);}
+    100%{transform: scale(1.5);}
+    
+    
+}
+
+
+.baixo::before
+{
+    content: "";
+    position: absolute;
+    top: 22%;
+    left: 0;
+    background: #FFC700;
+    width: 100%;
+    height: 100%;
+    transform: perspective(400px) rotateX(80deg) scale(0.9,0.35);
+    filter: blur(64px);
+    opacity: 0.7;
+    pointer-events: none;
+
+}
+
+.neon::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 128px 32px #FFC700;
+    opacity: 0;
+    background-color: #FFC700;
+    z-index: 1;
+    transition: opacity 100ms linear;
+}
+
+
+.neon:hover::before,
+.noen:hover::after
+{
+    opacity: 1;
+}
+
+.neon:hover
+{
+    color: #FFC700;
+    text-shadow: none;
+}
+
+
+nav
+{
+    padding-left: 10px;
+}
+
+img
+{
+    display: flex;
+    justify-content: space-around;
+    border: 0.5px solid #FFC700;
+    border-radius: 10px;
+    box-shadow: 0px 0px 100px 10px rgba(235, 220, 17);
+    width: 300px;
+    height:250px ;
+    margin: 30px;
+
+
+
+}
+
+
+.cubo 
+{
+   
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px rgba(235, 220, 17);
+    margin-top: 60px;
+   
+}
+
+p
+{
+
+    color: #fff;
+    font-size: 26px;
+    font-family: 'Bebas Neue', sans-serif;
+    padding-left: 0px;
+    margin-top: 20px;
+
+
+}
+
+.letra
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    margin: 30px;
+
+}
+
+.letra2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    margin: 10px;
+    margin-top: 0px;
+}
+
+
+
+.rodape
+{
+    margin-top: 40px;
+    background-color: #FFC700;
+    height: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1280px)
+
+{ 
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #000;
+    
+  
+}
+
+    
+header
+{
+   
+        background-color: #000;
+        border-bottom: solid #FFC700 10px;
+        padding-bottom: 20px;
+
+   
+
+}
+
+
+#menu-principal
+{
+    display: flex;
+}
+
+
+   
+h1
+{
+
+
+    font-family: 'Bebas Neue', sans-serif;
+    padding: 40px 20px;
+    color: #FFC700;
+    font-size: 120px;
+    letter-spacing: 24px;
+    margin-left: 70px;
+    text-shadow: 0px 0px 80px #FFC700;
+    position: relative;
+    user-select: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    
+}
+
+
+a
+{
+            
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 900;
+    font-size: 26px;
+    padding: 40px;
+    padding-bottom: 0;
+    padding-left: 60px;
+
+}
+
+
+a:hover
+{
+    color: #FFC700;
+    border-bottom: 5px solid #FFC700;
+    animation: 1.5s infinite anima; 
+}
+
+
+@keyframes anima {
+
+    0%{transform: scale(1.5);}
+    100%{transform: scale(1.5);}
+    
+    
+}
+
+
+.baixo::before
+{
+    content: "";
+    position: absolute;
+    top: 22%;
+    left: 0;
+    background: #FFC700;
+    width: 100%;
+    height: 100%;
+    transform: perspective(400px) rotateX(80deg) scale(0.9,0.35);
+    filter: blur(64px);
+    opacity: 0.7;
+    pointer-events: none;
+
+}
+
+.neon::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0 0 128px 32px #FFC700;
+    opacity: 0;
+    background-color: #FFC700;
+    z-index: 1;
+    transition: opacity 100ms linear;
+}
+
+
+.neon:hover::before,
+.noen:hover::after
+{
+    opacity: 1;
+}
+
+.neon:hover
+{
+    color: #FFC700;
+    text-shadow: none;
+}
+
+
+button
+{
+    display: none;
+}
+
+
+
+
+nav
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-left: 50px;
+}
+
+img
+{
+    display: flex;
+    justify-content: space-around;
+    border: 0.5px solid #FFC700;
+    border-radius: 10px;
+    box-shadow: 0px 0px 100px 10px rgba(235, 220, 17);
+    width: 600px;
+    height:625px ;
+    margin-left: 10px ;
+
+
+
+}
+
+
+.cubo 
+{
+   
+    display: flex;
+    flex-direction: row;
+   
+    padding: 30px;
+
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 10px rgba(235, 220, 17);
+    margin: 40px;
+   
+}
+
+p
+{
+    color: #fff;
+    font-size: 40px;
+    font-family: 'Bebas Neue', sans-serif;
+    padding-left: 100PX;
+
+}
+
+.letra
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 80px;
+    margin: 30px;
+
+}
+
+.letra2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+    margin: 30px;
+}
+
+ /* .letra
+{
+    margin: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+    padding: 30px;
+    border-radius: 30px;
+    background-image: url('../img/branco.png');
+    background-position: center;
+    background-size: cover;
+    filter: blur(5px);
+    
+} */
+
+
+.rodape
+{
+    margin-top: 40px;
+    background-color: #FFC700;
+    height: 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li
+{
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+
+
+    
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

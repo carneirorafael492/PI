@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/localizacao.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1  class="baixo">BARBEARIA DZ7</h1>
+
+        <button id="hamburguer" onclick="menu()">≡</button>
+
+        <nav id="menu-principal">
+
+         <div class="dividir">
+            <a href="index.html">INICIO</a>
+            <a href="contatos.html">CONTATO</a>
+        </div>
+        <div class="dividir">
+            <a href="localizacao.html">LOCALIZAÇÃO</a>
+            <a href="sobre.html">SOBRE</a>
+        </div>
+        </nav>
+
+    </header>
+
+
+
+    <script>
+
+        function menu()
+        {
+            var m = document.getElementById("menu-principal");
+            var b = document.getElementById("hamburguer");
+
+            if (m.style.display == "none")
+            {
+                m.style.display = "block";
+                b.innerHTML = "X";
+            }
+            else
+            {
+                m.style.display = "none";
+                b.innerHTML = "≡";
+            }
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+    <main>
+
+<div class="meio">
+    
+    <img src="img/poste.png" alt="">
+
+    <div class="mapouter">
+       
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!3m2!1spt-BR!2sbr!4v1705933010143!5m2!1spt-BR!2sbr!6m8!1m7!1sBHz9Fa5Z9i3jfImLCaU0yQ!2m2!1d-23.93656482164056!2d-46.18307402442858!3f50.86728987447912!4f1.7555549114422888!5f0.7820865974627469"
+               style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    
+
+    <img src="img/poste.png" alt="">
+
+</div>
+</main>
+
+<div class="rodape">
+    Desenvolvido pela Turma TI47
+   &copy;
+    
+
+
+</div>
+
+</footer>
+</body>
+
+</html>

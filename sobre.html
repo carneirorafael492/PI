@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/sobre.css">
+</head>
+
+<body>
+
+    <header>
+
+        <h1  class="baixo">BARBEARIA DZ7</h1>
+
+        <button id="hamburguer" onclick="menu()">≡</button>
+
+        <nav id="menu-principal">
+         <div class="dividir">
+            <a href="index.html">INICIO</a>
+            <a href="contatos.html">CONTATO</a>
+        </div>
+        <div class="dividir">
+            <a href="localizacao.html">LOCALIZAÇÃO</a>
+            <a href="sobre.html">SOBRE</a>
+        </div>
+        </nav>
+
+    </header>
+
+    <script>
+
+        function menu()
+        {
+            var m = document.getElementById("menu-principal");
+            var b = document.getElementById("hamburguer");
+
+            if (m.style.display == "none")
+            {
+                m.style.display = "block";
+                b.innerHTML = "X";
+            }
+            else
+            {
+                m.style.display = "none";
+                b.innerHTML = "≡";
+            }
+
+        }
+    </script>
+
+
+
+
+
+
+
+    <main>
+
+        <div class="meio">
+
+            <div class="cubo">
+                <img src="img/maquinas.png" alt="" class="foto">
+                <div class="letra">
+                    <p>
+                        Descubra o poder da transformação na Barbearia DZ7, onde cada corte é uma obra de arte e cada
+                        barba é esculpida com precisão. <br>  Em um ambiente moderno e descontraído, nossa equipe de barbeiros
+                        talentosos está pronta para levar seu estilo a um patamar superior.
+                    </p>
+
+
+                </div>
+
+            </div>
+
+
+            <div class="cubo">
+
+                <img src="img/corte.png" alt="" class="foto">
+                <div class="letra2">
+                    <p> CORTES { MAQUINA, TESOUNA E NAVALHADO} </p> <BR></BR>
+
+                    <P>SOBRANCELHA {TRACIONAL NA NAVALHA } </p> <BR></BR>
+
+                    <p>BARBA</p> <BR></BR>
+
+                    <p>ESFOLIAÇÃO DE PELE</p> <BR></BR>
+
+                    <p>MASSAGEM</p> <BR></BR>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+</body>
+
+
+
+<footer>
+
+
+    <div class="rodape">
+        Desenvolvido pela Turma TI47
+        &copy;
+
+
+
+    </div>
+
+</footer>
+
+
+
+</html>

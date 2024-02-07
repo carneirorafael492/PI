@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,54 +12,107 @@
 </head>
 <body>
     
+  
     <header>
 
-        <img src="" alt="">
+        <h1  class="baixo">BARBEARIA DZ7</h1>
+        <button id="hamburguer" onclick="menu()">≡</button>
 
-        <nav>
-
-            <h1>BARBEARIA DZ7</h1>
-            <a href="">HOME</a>
-            <a href="">CONTATO</a>
-            <a href="">LOCALIZAÇÃO</a>
-            <a href="">SOBRE</a>
+        <nav id="menu-principal">
+         <div class="dividir">
+            <a href="index.html">INICIO</a>
+            <a href="contatos.html">CONTATO</a>
+        </div>
+        <div class="dividir">
+            <a href="localizacao.html">LOCALIZAÇÃO</a>
+            <a href="sobre.html">SOBRE</a>
+        </div>
         </nav>
 
     </header>
 
+
+
+    <script>
+
+        function menu()
+        {
+            var m = document.getElementById("menu-principal");
+            var b = document.getElementById("hamburguer");
+
+            if (m.style.display == "none")
+            {
+                m.style.display = "block";
+                b.innerHTML = "X";
+            }
+            else
+            {
+                m.style.display = "none";
+                b.innerHTML = "≡";
+            }
+
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <main>
 
 
-    <div class="meio"></div>
+    <div class="meio">
 
     <img  class="foto" src="img/MicrosoftTeams-image.png" alt="">
 
-   
+
+    <div class="sub">
     
         <div class="card">
-    <img class="imagem" src="img/whatsapp (2).png" alt="">
-    <p>(13)99623-7542</p>
+    <img class="imagens" id="whats" src="img/whatsapp (2).png" alt="">
+    <p> (13) 99623-7542</p>
 </div>
-
-
+   
     <div class="card">
-    <img class="imagem" src="img/facebook.png" alt="">
-    <p>Barbearia Dz7</p>
-</div>
-
-    <div class="card">
-    <img class="imagem" src="img/icons8-instagram-400.png" alt="">
+    <img class="imagens"  id="insta" src="img/icons8-instagram-400.png" alt="">
     <p>@barbeariadz7</p>
+    </div>
+    
+    
+    <div class="card">
+        <img class="imagens" id="fece" src="img/facebook.png" alt="">
+        <p>Barbearia Dz7</p>
+    </div>
+ 
 </div>
+
 <img class="foto" src="img/MicrosoftTeams-image (1).png" alt="">
 
 
-   
+</div>
 
   
 
 </div>
 
 </main>
+
+<div class="rodape">
+    Desenvolvido pela Turma TI47
+   &copy;
+    
+
+
+</div>
+
+</footer>
 </body>
 </html>
